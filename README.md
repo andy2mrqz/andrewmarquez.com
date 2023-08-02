@@ -1,3 +1,3 @@
-# Andrew Marquez Blog
+# Andrew Marquez
 
-Built using [Astro 🚀](https://astro.build).
+My personal website, built using [Astro 🚀](https://astro.build).
