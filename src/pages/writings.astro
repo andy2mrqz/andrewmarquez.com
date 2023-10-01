@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/base.astro";
+import { Image } from "astro:assets";
+import profileImage from "../assets/profile-4x5.jpg";
+
+const title = "Andrew Marquez - Writings";
+const description = "Writings for Andrew Marquez's personal website";
+const permalink = import.meta.env.SITE;
+---
+
+<BaseLayout {title} {description} {permalink}>
+  <main>
+    <div>
+      <p>Articles:</p>
+      <ul>
+        <li>Post 1</li>
+        <li>Post 2</li>
+        <li>Post 3</li>
+      </ul>
+    </div>
+  </main>
+
+  <style></style>
+</BaseLayout>
