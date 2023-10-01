@@ -2,7 +2,7 @@
 import BaseHead, {
   type Props as BaseHeadProps,
 } from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
+import Navbar from "../components/Navbar.astro";
 import "../styles/main.scss";
 
 type Props = BaseHeadProps & {};
@@ -13,7 +13,7 @@ const { title, description, permalink } = Astro.props;
 <!doctype html>
 <html lang="en">
   <BaseHead {title} {description} {permalink} />
-  <Header />
+  <Navbar />
   <body class="p-40">
     <slot />
   </body>
