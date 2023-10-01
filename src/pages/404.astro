@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/base.astro";
+import Link from "../components/atoms/Link.astro";
+
+const path = Astro.url.pathname;
+---
+
+<BaseLayout title="404: Not Found" description="404: Not Found">
+  <main class="text-center flex flex-col justify-center items-center h-screen">
+    <h1>404: Not Found</h1>
+    <code>Path: {path}</code>
+    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <a href="/" class="btn btn-secondary">Go back home</a>
+  </main>
+</BaseLayout>
