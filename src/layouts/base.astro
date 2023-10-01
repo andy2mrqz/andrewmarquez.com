@@ -1,5 +1,5 @@
 ---
-import BaseHead, { Props as BaseHeadProps } from "../components/BaseHead.astro";
+import BaseHead, { type Props as BaseHeadProps } from "../components/BaseHead.astro";
 import "../styles/main.scss";
 
 type Props = BaseHeadProps & {};
@@ -13,21 +13,8 @@ const { title, description, permalink } = Astro.props;
   <body>
     <slot />
     <style is:global>
-      :root {
-        --accent: 136, 58, 234;
-        --accent-light: 224, 204, 250;
-        --accent-dark: 49, 10, 101;
-        --accent-gradient: linear-gradient(
-          45deg,
-          rgb(var(--accent)),
-          rgb(var(--accent-light)) 30%,
-          white 60%
-        );
-      }
       html {
         font-family: system-ui, sans-serif;
-        background: #13151a;
-        background-size: 224px;
       }
       code {
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
