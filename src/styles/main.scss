@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply text-sm;
+    @apply px-5 py-2.5;
+    @apply rounded-lg;
+    &:focus {
+      @apply ring-4;
+    }
+  }
+
+  .btn-primary {
+    @apply text-white;
+    @apply bg-blue-400;
+    @apply bg-gradient-to-t;
+    &:hover {
+      @apply bg-blue-500;
+    }
+    &:focus {
+      @apply ring-blue-200;
+    }
+  }
+
+  .btn-secondary {
+    @apply text-white;
+    @apply bg-red-400;
+    @apply bg-gradient-to-t;
+    &:hover {
+      @apply bg-red-500;
+    }
+    &:focus {
+      @apply ring-red-200;
+    }
+  }
+}
