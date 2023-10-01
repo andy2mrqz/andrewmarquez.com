@@ -13,8 +13,8 @@ const { title, description, permalink } = Astro.props;
 <!doctype html>
 <html lang="en">
   <BaseHead {title} {description} {permalink} />
-  <Navbar />
   <body class="p-40">
+    <Navbar />
     <slot />
   </body>
 </html>
