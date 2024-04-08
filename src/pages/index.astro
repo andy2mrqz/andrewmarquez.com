@@ -1,7 +1,8 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import profileImage from "../assets/profile-4x5.jpg";
+import PostsList from "../components/PostsList.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const title = "Andrew Marquez";
 const description = "Andrew Marquez's personal website";
@@ -9,14 +10,8 @@ const permalink = import.meta.env.SITE;
 ---
 
 <BaseLayout {title} {description} {permalink}>
-  <main>
-    <div class="flex gap-4 flex-col justify-center items-center sm:flex-row">
-      <Image src={profileImage} alt="Picture of Andrew Marquez" class="w-48" />
-      <div class="w-screen text-center sm:text-left">
-        <h1 class="text-xl">Andrew Marquez</h1>
-        <h2 class="text-lg">Software Engineer</h2>
-        <p>My personal website.</p>
-      </div>
-    </div>
-  </main>
+  <Image src={profileImage} alt="Headshot of Andrew Marquez" class="w-40" />
+  <p>I am Andrew Marquez. Thanks for checking out my webpage!</p>
+  <h2 class="text-2xl">Blog Posts</h2>
+  <PostsList />
 </BaseLayout>
