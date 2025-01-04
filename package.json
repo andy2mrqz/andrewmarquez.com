@@ -4,8 +4,9 @@
     "start": "concurrently \"npm:dev:css\" \"npm:serve\"",
     "serve": "serve site",
     "build": "npm run build:css",
-    "build:css": "tailwindcss -o site/styles.css --minify",
-    "dev:css": "tailwindcss -o site/styles.css --watch"
+    "base:css": "tailwindcss -o site/styles.css",
+    "build:css": "npm run base:css -- --minify",
+    "dev:css": "npm run base:css -- --watch"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
