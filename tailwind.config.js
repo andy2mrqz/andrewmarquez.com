@@ -2,7 +2,11 @@
 export default {
   content: ["./site/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "blue-link": "#0000EE",
+      },
+    },
   },
   plugins: [],
 };
