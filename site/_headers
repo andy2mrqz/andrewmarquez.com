@@ -1,7 +1,2 @@
 /*
-  Content-Security-Policy: default-src 'self';
-  Content-Security-Policy: img-src 'self';
-  Content-Security-Policy: style-src 'self';
-  Content-Security-Policy: script-src 'self';
-  Content-Security-Policy: frame-ancestors 'none';
-  Content-Security-Policy: require-trusted-types-for 'script';
+  Content-Security-Policy: default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; frame-ancestors 'none'; require-trusted-types-for 'script';
